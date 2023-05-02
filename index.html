@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Show implementation of grid</h1>
+    <div class="show">
+        <div class="grid1"></div>
+        <div class="grid2"></div>
+        <div class="grid3"></div>
+        <div class="grid4"></div>
+        <div class="grid5"></div>
+        <div class="grid6"></div>
+    </div><hr>
+
+    <h1>Which property you will use to merge cells vertically in grid?</h1>
+    <p>grid-column-start and grid-column-end property can be used to merge cells
+        vertically. It also has a shorthand i.e., grid-column: start/end. If you want to merge
+        two elements in row then we will have to use grid-row property inside the child
+        element. Remember these properties are applicable only to child elements not to
+        parent elements.</p>
+        <div class="grid-container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">6</div>
+            </div>
+
+    <hr>
+    <h1>Which property you will use to merge cells horizontally in grid?</h1> 
+    <p>grid-row-start and grid-row-end property can be used to merge cells horizontally. It
+        also has a shorthand i.e., grid-row: grid-row-start/grid-row-end;</p> 
+        <div class="grid-container">
+            <div class="item item2">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">6</div>
+            </div>
+            <hr>
+
+   <h1>What is grid-template-columns used for?</h1> 
+   <p>Grid-template-columns property defines how many columns should be there in a
+    grid-container. The number of columns is determined by the number of values
+    defined in the space-separated list. It takes values in px, % and fraction (fr).</p>
+    <p>Using pixels:</p> 
+    <div class="container">
+        <div class="it">This is Item-1</div>
+        <div class="it">This is Item-2</div>
+        <div class="it">This is Item-3</div>
+        <div class="it">This is Item-4</div>
+        <div class="it">This is Item-5</div>
+        <div class="it">This is Item-6</div>
+        </div>
+<p>Using auto:</p>
+        <div class="container1">
+            <div class="it">This is Item-1</div>
+            <div class="it">This is Item-2</div>
+            <div class="it">This is Item-3</div>
+            <div class="it">This is Item-4</div>
+            <div class="it">This is Item-5</div>
+            <div class="it">This is Item-6</div>
+            </div>
+            <p>Using fraction:</p>
+        <div class="container2">
+            <div class="it">This is Item-1</div>
+            <div class="it">This is Item-2</div>
+            <div class="it">This is Item-3</div>
+            <div class="it">This is Item-4</div>
+            <div class="it">This is Item-5</div>
+            <div class="it">This is Item-6</div>
+            </div>
+            <p>Using percentage:</p>
+            <div class="container3">
+                <div class="it">This is Item-1</div>
+                <div class="it">This is Item-2</div>
+                <div class="it">This is Item-3</div>
+                <div class="it">This is Item-4</div>
+                <div class="it">This is Item-5</div>
+                <div class="it">This is Item-6</div>
+                </div><hr>
+                <h1>What are CSS combinators </h1>
+                <pre>
+Combinators combine the selectors to provide them a useful relationand the position of content in the document. 
+This comes in handy whenwant to style certain elements all at once rather than styling elemindividually. 
+CSS combinator selectors are as follows.
+1. Descendant Selector (space)
+2. Child Selector (>)
+3. Adjacent Sibling Selector (+)
+4. General Sibling Selector (~)
+
+Descendant Selector : The descendant selector matches all elements are descendants of a specified element.                    
+                </pre>
+                <div>
+                    <h2>Hello World!</h2>
+                    <span>I am child paragraph</span><br>
+                    <button>
+                        <span>This paragraph tag is NOT a direct child of the first div</span>
+                        </button><br>
+                    <span>I am child paragraph</span>
+                    </div>
+
+                    <p>Child Selector : The child selector will only affect elements under a direct
+                        parent. A good way to remember this is that a child will only listen to its direct
+                        parents.</p>
+                        <p>Adjacent Sibling Selector : To use the adjacent sibling selector in your CSS
+                            stylesheet, you simply need the plus (+) sign. The adjacent sibling selector is used
+                            to select an element that is directly after another specific elemen</p>
+                        <p>General Sibling Selectors :The general sibling selector follows through on all
+                            elements under the targeted HTML element selected. This means that if another
+                            element tag interrupts the direct adjacent flow, the style rules can still follow
+                            through.</p> <hr>
+                            
+                            <h1>What are pseudo selectors in CSS</h1>
+                            <pre>
+CSS pseudo-classes are used to add styles to selectors, but only when those selectors meet certain conditions. A pseudo class is expressed by adding a colon (:) after a selector in CSS, followed by a pseudo-class such as "hover", "focus", or"active", like this:
+                                a:hover {
+                                /*add your style here */
+                                }
+
+                                Syntax:
+                                selector:pseudo-class {
+                                property : value;
+                                }
+Some Examples of Pseudo-Class:
+:active It is used to add style to an active element.
+:hover It adds special effects to an element when the user moves the
+                                mouse pointer over the element.
+:link It adds style to the unvisited link.
+:visited It adds style to a visited link.
+:lang It is used to define a language to use in a specified element.
+:focus It selects the element which is focused by the user currently.
+:first-child It adds special effects to an element, which is the first child of
+another element.</pre>
+<hr>
+
+<h1>Show implementation of transition</h1>
+<p>The transition-property specifies the CSS properties to which you want the
+    transition effect. Only these CSS properties are animated.</p>
+    <div class="transition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorem error deleniti culpa deserunt a officia ipsum sapiente! Obcaecati autem voluptate quam, deserunt aspernatur nobis voluptatem soluta ipsam incidunt asperiores repudiandae est aliquam dolorem.</div><hr>
+
+    <h1>Create 4 column and 3 rows using grid</h1>
+    <div class="grid">
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        <div class="g"></div>
+        
+    </div><hr>
+
+    <h1>Show implementation of transformation</h1>
+    <pre>CSS transforms are a collection of functions that allow to shape elements in
+        particular ways:
+        ● translate: moves the element along up to 3 axis (x, y and z)
+        ● rotate: moves the element around a central point
+        ● scale: resizes the element
+        ● skew: distorts the element</pre>
+        <div class="hello">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ratione.</div>
+
+                
+              
+            
+</body>
+</html>
